@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Go build output
+/legacyinspector
+*.test
+*.out
+
+# Vendor
+/vendor/
+
+# Local OpenCore source used by importer
+/tools/import_models/OpenCorePkg/
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo

@@ -1,0 +1,247 @@
+{
+  "1C": {
+    "code": "1C",
+    "name": "China",
+    "format": "legacy-11"
+  },
+  "4H": {
+    "code": "4H",
+    "name": "China",
+    "format": "legacy-11"
+  },
+  "73": {
+    "code": "73",
+    "name": "Unknown",
+    "format": "legacy-11"
+  },
+  "7J": {
+    "code": "7J",
+    "name": "China (Hon Hai/Foxconn)",
+    "format": "legacy-11"
+  },
+  "C0": {
+    "code": "C0",
+    "name": "China (Quanta Computer, Tech-Com)",
+    "format": "legacy-11"
+  },
+  "C02": {
+    "code": "C02",
+    "name": "China (Quanta Computer)",
+    "format": "legacy-12"
+  },
+  "C07": {
+    "code": "C07",
+    "name": "China (Quanta Computer)",
+    "format": "legacy-12"
+  },
+  "C17": {
+    "code": "C17",
+    "name": "China",
+    "format": "legacy-12"
+  },
+  "C1M": {
+    "code": "C1M",
+    "name": "China",
+    "format": "legacy-12"
+  },
+  "C2V": {
+    "code": "C2V",
+    "name": "China",
+    "format": "legacy-12"
+  },
+  "C3": {
+    "code": "C3",
+    "name": "China (Shenzhen, Foxconn)",
+    "format": "legacy-11"
+  },
+  "C7": {
+    "code": "C7",
+    "name": "China (Shanghai, Pegatron)",
+    "format": "legacy-11"
+  },
+  "CK": {
+    "code": "CK",
+    "name": "Ireland (Cork)",
+    "format": "legacy-11"
+  },
+  "CK2": {
+    "code": "CK2",
+    "name": "Ireland (Cork)",
+    "format": "legacy-12"
+  },
+  "CMV": {
+    "code": "CMV",
+    "name": "Unknown",
+    "format": "legacy-12"
+  },
+  "CY": {
+    "code": "CY",
+    "name": "Korea",
+    "format": "legacy-11"
+  },
+  "D25": {
+    "code": "D25",
+    "name": "Unknown",
+    "format": "legacy-12"
+  },
+  "DGK": {
+    "code": "DGK",
+    "name": "Unknown",
+    "format": "legacy-12"
+  },
+  "DL": {
+    "code": "DL",
+    "name": "China (Foxconn)",
+    "format": "legacy-11"
+  },
+  "DM": {
+    "code": "DM",
+    "name": "China (Foxconn)",
+    "format": "legacy-11"
+  },
+  "EE": {
+    "code": "EE",
+    "name": "Taiwan",
+    "format": "legacy-11"
+  },
+  "F1": {
+    "code": "F1",
+    "name": "China (Zhengzhou, Foxconn)",
+    "format": "legacy-11"
+  },
+  "F2": {
+    "code": "F2",
+    "name": "China (Zhengzhou, Foxconn)",
+    "format": "legacy-11"
+  },
+  "F5K": {
+    "code": "F5K",
+    "name": "USA (Flextronics)",
+    "format": "legacy-12"
+  },
+  "F7": {
+    "code": "F7",
+    "name": "China",
+    "format": "legacy-11"
+  },
+  "FC": {
+    "code": "FC",
+    "name": "USA (Fountain, Colorado)",
+    "format": "legacy-11"
+  },
+  "FK": {
+    "code": "FK",
+    "name": "China (Zhengzhou, Foxconn)",
+    "format": "legacy-11"
+  },
+  "FVF": {
+    "code": "FVF",
+    "name": "Unknown",
+    "format": "legacy-12"
+  },
+  "G8": {
+    "code": "G8",
+    "name": "USA",
+    "format": "legacy-11"
+  },
+  "H0": {
+    "code": "H0",
+    "name": "Unknown",
+    "format": "legacy-11"
+  },
+  "MB": {
+    "code": "MB",
+    "name": "Malaysia",
+    "format": "legacy-11"
+  },
+  "MQ": {
+    "code": "MQ",
+    "name": "China",
+    "format": "legacy-11"
+  },
+  "PT": {
+    "code": "PT",
+    "name": "Korea",
+    "format": "legacy-11"
+  },
+  "QP": {
+    "code": "QP",
+    "name": "USA",
+    "format": "legacy-11"
+  },
+  "QT": {
+    "code": "QT",
+    "name": "Taiwan (Quanta Computer)",
+    "format": "legacy-11"
+  },
+  "RM": {
+    "code": "RM",
+    "name": "Refurbished Model",
+    "format": "legacy-11"
+  },
+  "RN": {
+    "code": "RN",
+    "name": "Mexico",
+    "format": "legacy-11"
+  },
+  "SG": {
+    "code": "SG",
+    "name": "Singapore",
+    "format": "legacy-11"
+  },
+  "UV": {
+    "code": "UV",
+    "name": "Taiwan",
+    "format": "legacy-11"
+  },
+  "VM": {
+    "code": "VM",
+    "name": "Czech Republic (Pardubice, Foxconn)",
+    "format": "legacy-11"
+  },
+  "W8": {
+    "code": "W8",
+    "name": "China (Shanghai)",
+    "format": "legacy-11"
+  },
+  "W80": {
+    "code": "W80",
+    "name": "Unknown",
+    "format": "legacy-12"
+  },
+  "W88": {
+    "code": "W88",
+    "name": "Unknown",
+    "format": "legacy-12"
+  },
+  "W89": {
+    "code": "W89",
+    "name": "Unknown",
+    "format": "legacy-12"
+  },
+  "WQ": {
+    "code": "WQ",
+    "name": "China",
+    "format": "legacy-11"
+  },
+  "XA": {
+    "code": "XA",
+    "name": "USA (ElkGrove/Sacramento, California)",
+    "format": "legacy-11"
+  },
+  "XB": {
+    "code": "XB",
+    "name": "USA (ElkGrove/Sacramento, California)",
+    "format": "legacy-11"
+  },
+  "YM": {
+    "code": "YM",
+    "name": "China",
+    "format": "legacy-11"
+  },
+  "YM0": {
+    "code": "YM0",
+    "name": "China (Hon Hai/Foxconn)",
+    "format": "legacy-12"
+  }
+}
