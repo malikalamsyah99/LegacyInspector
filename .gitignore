@@ -18,3 +18,5 @@
 .vscode/
 *.swp
 *.swo
+
+tools/import_device_identifiers/apple_device_identifiers/
