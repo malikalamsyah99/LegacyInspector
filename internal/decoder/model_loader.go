@@ -19,12 +19,17 @@ var modelData []byte
 //go:embed data/model_overrides.json
 var modelOverrideData []byte
 
+//go:embed data/device_identifiers.json
+var deviceIdentifierData []byte
+
 var models map[string]ModelInfo
 var modelOverrides map[string]ModelInfo
+var deviceIdentifiers map[string]string
 
 func init() {
 	models = make(map[string]ModelInfo)
 	modelOverrides = make(map[string]ModelInfo)
+	deviceIdentifiers = make(map[string]string)
 
 	if err := json.Unmarshal(modelData, &models); err != nil {
 		panic(fmt.Sprintf(
@@ -42,6 +47,16 @@ func init() {
 			err,
 		))
 	}
+
+	if err := json.Unmarshal(
+		deviceIdentifierData,
+		&deviceIdentifiers,
+	); err != nil {
+		panic(fmt.Sprintf(
+			"failed to load device identifier database: %v",
+			err,
+		))
+	}
 }
 
 func lookupModel(code string) (ModelInfo, bool) {
@@ -56,4 +71,17 @@ func lookupModel(code string) (ModelInfo, bool) {
 	}
 
 	return ModelInfo{}, false
+}
+
+func lookupModelByDeviceName(name string) (ModelInfo, bool) {
+	model, ok := deviceIdentifiers[name]
+	if !ok {
+		return ModelInfo{}, false
+	}
+
+	return ModelInfo{
+		Name:   name,
+		Model:  model,
+		Source: "apple_device_identifiers",
+	}, true
 }

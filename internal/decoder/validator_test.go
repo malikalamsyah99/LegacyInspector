@@ -25,7 +25,7 @@ func TestDecodeLegacy12Samples(t *testing.T) {
 			name:           "iPod touch 4 DCP9",
 			serial:         "C3WF2E79DCP9",
 			wantDevice:     "iPod touch (4th generation)",
-			wantModel:      "",
+			wantModel:      "iPod4,1",
 			wantModelYear:  0,
 			wantProduction: 2011,
 			wantWeek:       2,
@@ -34,7 +34,7 @@ func TestDecodeLegacy12Samples(t *testing.T) {
 			name:           "iPod touch 4 DCP7",
 			serial:         "C3TDXN3VDCP7",
 			wantDevice:     "iPod touch (4th generation)",
-			wantModel:      "",
+			wantModel:      "iPod4,1",
 			wantModelYear:  0,
 			wantProduction: 2010,
 			wantWeek:       52,
@@ -43,7 +43,7 @@ func TestDecodeLegacy12Samples(t *testing.T) {
 			name:           "iPod touch 5 F4K1",
 			serial:         "CCOKG09WF4K1",
 			wantDevice:     "iPod touch (5th generation)",
-			wantModel:      "",
+			wantModel:      "iPod5,1",
 			wantModelYear:  0,
 			wantProduction: 2013,
 			wantWeek:       13,
@@ -89,17 +89,6 @@ func TestDecodeLegacy12Samples(t *testing.T) {
 				)
 			}
 
-			if tt.wantModel == "" {
-				if result.Model != nil {
-					t.Errorf(
-						"model = %q, want no model metadata",
-						result.Model.Model,
-					)
-				}
-
-				return
-			}
-
 			if result.Model == nil {
 				t.Fatalf("expected model metadata")
 			}
@@ -112,7 +101,8 @@ func TestDecodeLegacy12Samples(t *testing.T) {
 				)
 			}
 
-			if result.Model.ModelYear != tt.wantModelYear {
+			if tt.wantModelYear != 0 &&
+				result.Model.ModelYear != tt.wantModelYear {
 				t.Errorf(
 					"model year = %d, want %d",
 					result.Model.ModelYear,

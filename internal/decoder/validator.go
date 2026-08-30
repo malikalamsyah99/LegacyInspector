@@ -24,6 +24,20 @@ func validateBase34(value string) bool {
 	return true
 }
 
+func resolveProductModel(productCode string, product *Product) *ModelInfo {
+	if model, found := lookupModel(productCode); found {
+		return &model
+	}
+
+	if product != nil {
+		if model, found := lookupModelByDeviceName(product.Name); found {
+			return &model
+		}
+	}
+
+	return nil
+}
+
 func decode11(serial string, result Result) Result {
 	result.Format = FormatLegacy11
 
@@ -70,9 +84,10 @@ func decode11(serial string, result Result) Result {
 		result.Product = &product
 	}
 
-	if model, found := lookupModel(result.ProductCode); found {
-		result.Model = &model
-	}
+	result.Model = resolveProductModel(
+		result.ProductCode,
+		result.Product,
+	)
 
 	result.Valid = true
 
@@ -107,9 +122,10 @@ func decode12(serial string, result Result) Result {
 		result.Product = &product
 	}
 
-	if model, found := lookupModel(result.ProductCode); found {
-		result.Model = &model
-	}
+	result.Model = resolveProductModel(
+		result.ProductCode,
+		result.Product,
+	)
 
 	year, half, ok := decodeYear(
 		serial[3],
