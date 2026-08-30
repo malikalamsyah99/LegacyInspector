@@ -5,6 +5,7 @@
 /legacyinspector
 *.test
 *.out
+*.txt
 
 # Vendor
 /vendor/
